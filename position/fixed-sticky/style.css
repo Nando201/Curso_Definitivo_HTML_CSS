@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.container {
+    width: 100vw;
+    height: 1000px;
+    background-color: #9e9292;
+    padding: 20px;
+}	
+
+.sticky-box{
+    background-color: red;
+    width: 50px;
+    height: 80px;
+    position: sticky;
+    top: 10px;
+
+}
+
+.fixed-box{
+    background-color: rgb(56, 56, 95);
+    width: 50px;
+    height: 80px;
+    position: fixed;
+    top: 10px;
+    right: 100px;
+}
+
+ul li{
+    list-style: none;
+    display: inline;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.box-red {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}	
+  
+.box-blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}	
+  
+  
+  
