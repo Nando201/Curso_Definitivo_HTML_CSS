@@ -1,0 +1,28 @@
+.menu {
+  background-color: #333;
+  color: white;
+}
+
+.menu--horizontal {
+  display: flex;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu__item {
+  margin-right: 20px;
+}
+
+.menu__item--active .menu__link {
+  font-weight: bold;
+}
+
+.menu__link {
+  color: white;
+  text-decoration: none;
+}
