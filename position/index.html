@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Position</title>
+    <style>
+      body {
+        height: 2000px; /* Hacemos la página larga para ver el efecto */
+        font-family: Arial, sans-serif;
+      }
+    
+      .sticky-box {
+        position: sticky;
+        top: 10px;
+        background-color: yellow;
+        padding: 10px;
+        border: 2px solid black;
+      }
+    
+      .fixed-box {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background-color: lightblue;
+        padding: 10px;
+        border: 2px solid black;
+      }
+    
+      .contenedor {
+        height: 500px;
+        background-color: lightgray;
+        padding: 10px;
+        margin-bottom: 100px;
+      }
+    </style>
+</head>
+<body>
+  
+  <div class="contenedor">
+    <div class="sticky-box">Caja Sticky (se pega cuando llega a top)</div>
+  </div>
+  
+  <div class="fixed-box">Caja Fixed (siempre fija en la pantalla)</div>
+  
+  <p>Desplázate hacia abajo para ver la diferencia.</p>
+  
+    
+</body>
+</html>
