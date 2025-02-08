@@ -13,21 +13,21 @@ header{
     width: 100vw;  
     padding: 10px; 
     font-size: 1.6rem;
+    background-color: #155E95;
     position: sticky;
-    top: 0;
-    margin-bottom: 20px;
+    top: 0px;
 }
 
-h1{
+h2{
     font-size: 2.2rem;
-    position: absolute;
-    left: 0;
+    color: white;
 }
 
 .nav-bar{
+    margin-right: 20px;
     position: absolute;
     right: 0;
-    margin-right: 20px;
+    bottom: 16px;
 }
 
 .nav-bar li{
@@ -37,35 +37,47 @@ h1{
 
 .nav-bar a{
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0 10px;
 }
 
 main{
-    background-color: #f1f1f1;
     height: 100vh;
+    background-color: #EEEEEE;
+    padding: 10px 0px;
 }	
 
-.introduce, .portfolio{
+.introduce{
     width: 80%;
-    margin: 0 auto;
+    height: 500px;
+    margin: 10px auto;
     padding: 20px;
     color: black;
-    position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
-h2{
+.description{
+    width: 60%;
+    height: 250px;
+    display: inline-block;
+    margin: auto 10px;
+    position: relative;
+    top: 110px;
+}
+
+.subtitle{
     font-size: 3.6rem;
-    margin: 20px;
 }
 
 p{
     font-size: 1.6rem;
+    margin-top: 20px;
 }
 
 figure{
     display: inline-block;
-    position: absolute;
-    right: 0;
-    top: 20px;
+    margin-left: 20px;
+    position: relative;
+    top: 110px;
 }
