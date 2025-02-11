@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    background-color: rgb(81, 69, 138);
+    padding: 10px 20px;
+}
+
+.navbar{ /*nav */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+
+.nav-links{ /*ul */
+    width: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    color: white;
+    gap: 0 20px;
+}
+
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+    .navbar {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: center;
+    }
+}
+
+
+/* Small screens */
+@media all and (max-width: 500px) {
+    .nav-links{
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
