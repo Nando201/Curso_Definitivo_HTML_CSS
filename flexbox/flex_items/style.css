@@ -18,14 +18,17 @@
     padding: 20px;
     border-radius: 10px;
     background-color: aquamarine;
-    flex-basis: 100px; /* default auto tamaño inicial de un elemento*/
-    flex-grow: 1; /* default 0 Crecer si es necesario, el valor es proporcional*/
 
+    flex-basis: 100px;
+    flex-grow: 1;
+    /*
+    flex-basis: 100px;  default auto tamaño inicial de un elemento 
+    flex-grow: 1; default 0 Crecer si es necesario, el valor es proporcional 
+    flex-shrink: 1; default 1 ability to shrink if necessary*/
 }
 
 .flex-container .box3{
     order: 1;
-    flex-shrink: 8; /* default 1 ability to shrink if necessary*/
 }
 
 
