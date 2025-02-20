@@ -1,0 +1,16 @@
+/* Guardar un valor que se pueda reutilizar en diferentes partes*/
+/* custom properties */
+
+:root{ /* El root es la etiqueta html */
+    --primary-color: #8d6a6a;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main h1{
+    color: var(--primary-color);
+}
