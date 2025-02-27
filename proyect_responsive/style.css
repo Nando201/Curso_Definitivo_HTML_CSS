@@ -2,7 +2,7 @@
     --font-size-title: 3.6rem;
     --font-size-subtitle: 2.2rem;
     --font-size-paragraphs: 1.6rem;
-    --primary-color: #13161C;
+    --primary-color: #1E2229;
 }
 
 *{
@@ -13,6 +13,11 @@
 
 html{
     font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
 }
 
 header{
@@ -51,7 +56,6 @@ main{
 
 #introduction{
     width: 100%;
-    min-width: 80%;
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -66,12 +70,20 @@ main{
 
 #progress{
     width: 100%;
-    min-width: 80%;
     display: flex;
     flex-direction: column;
-    padding: 1rem 2rem;
     align-items: center;
+    padding: 1rem 2rem;
     background-color: #e3ddd4;
+}
+
+#progress .container__bars{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 #progress h2{
@@ -84,11 +96,50 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8rem;
+    height: 5rem;
+    padding: 1rem 2rem;
     color: white;
     background-color: var(--primary-color);
 }
 
 footer p{
     font-size: var(--font-size-paragraphs);
+}
+
+/*Tablet */
+@media (min-width: 768px) {
+    header{
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #introduction img{
+        width: 450px;
+        height: 350px;
+    }
+    #progress .container__bars{
+        flex-flow: row wrap;
+    }
+}
+
+@media (min-width: 1024px){
+    #introduction img{
+        width: 650px;
+        height: 550px;
+    }
+    #progress {
+        width: 40%;
+        order: 1;
+    }
+    #progress .container__bars{
+        flex-direction: column;
+    }
+    #introduction{
+        margin-top: 5rem;
+        width: 60%;
+        order: 2;
+    }
+    footer{
+        height: 10vh;
+    }
 }
